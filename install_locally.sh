@@ -58,4 +58,4 @@ else
     echo "alias added to $profile"
 fi
 
-exec "$SHELL"
+exec $SHELL
