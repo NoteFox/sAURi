@@ -2,6 +2,6 @@
 if ! [ "$(python3 sAURi.py | grep -c ModuleNotFoundError)" -gt 0 ];
 then
   echo "trying to install missing pips"
-  bash install_pips.py
+  bash install_pips.sh
   python3 sAURi.py
 fi
