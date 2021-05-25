@@ -1,6 +1,6 @@
 #!/bin/bash
 
-alias="alias sauri='bash /opt/sauri/exec'"
+alias="alias sauri='python3 /opt/sauri/sAURi.py'"
 
 # hceking if directory exists
 if [ ! -d "/opt/sauri" ]; then
@@ -10,11 +10,9 @@ fi
 
 curl "https://raw.githubusercontent.com/NoteFox/sAURi/main/sAURi.py" | sudo tee /opt/sauri/sAURi.py 1>/dev/null
 curl "https://raw.githubusercontent.com/NoteFox/sAURi/main/scripts/install_pips.sh" | sudo tee /opt/sauri/install_pips.sh 1>/dev/null
-curl "https://raw.githubusercontent.com/NoteFox/sAURi/main/scripts/exec" | sudo tee /opt/sauri/exec 1>/dev/null
 
 sudo chown $USER /opt/sauri/sAURi.py
 sudo chown $USER /opt/sauri/install_pips.sh
-sudo chown $USER /opt/sauri/exec
 
 
 # automatic config file detection directly copied from
