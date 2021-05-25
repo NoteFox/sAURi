@@ -14,3 +14,4 @@ used python packages:
  - sys          # args listing
  - tqdm         # tar extraction progess bar
 ```
+install_pips - bash script for automatic installation of needed pips
