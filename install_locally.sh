@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "installing needed pips"
+curl "https://raw.githubusercontent.com/NoteFox/sAURi/main/scripts/install_pips.sh" | bash
+
 alias="alias sauri='python3 /opt/sauri/sAURi.py'"
 
 # hceking if directory exists
