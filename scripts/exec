@@ -3,7 +3,7 @@
 # https://stackoverflow.com/questions/59895/how-can-i-get-the-source-directory-of-a-bash-script-from-within-the-script-itsel
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 # -- copy end --
-if [ "$(python3 "$SCRIPT_DIR/sAURi.py $1" | grep -c ModuleNotFoundError)"];
+if [ "$(python3 "$SCRIPT_DIR/sAURi.py $1" | grep -c ModuleNotFoundError)" ];
 then
   echo "trying to install missing pips"
   bash "$SCRIPT_DIR/install_pips.sh"
