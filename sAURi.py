@@ -30,10 +30,10 @@ def is_pgk_url(string):
 
 
 # selector for different found pkg over the aur api
-def selectOutOfList(title, listing, none_option):
+def selectOutOfList(title, listing, pkg_dict ,none_option):
     print(title)
     for i in range(len(listing)):
-        print(str(i) + ")", listing[i])
+        print(str(i) + ")", listing[i], " | " + pkg_dict[listing[i]].description)
     if none_option:
         print("-1) none")
     selection = input("select -> ")
@@ -109,8 +109,11 @@ def installByName(name):
     for pkg in aur.search(name):
         pkg_dict[pkg.name] = pkg
 
-    installing = selectOutOfList("multiple packages found\nwhich package do you want to install",
-                                 difflib.get_close_matches(name, pkg_dict.keys()), none_option=True)
+    installing = selectOutOfList(title="multiple packages found\nwhich package do you want to install",
+                                 listing=difflib.get_close_matches(name, pkg_dict.keys()),
+                                 pkg_dict=pkg_dict,
+                                 none_option=True)
+
     if installing is None:
         print("nothing selected, exiting")
         exit(0)
