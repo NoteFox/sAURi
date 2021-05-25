@@ -15,7 +15,7 @@ used python packages:
  - tqdm         # tar extraction progess bar
 ```
 
-isntalling locally:
+installing locally:
 ```bash
 curl https://raw.githubusercontent.com/NoteFox/sAURi/main/install_locally.sh | bash
 ```
