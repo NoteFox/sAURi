@@ -14,4 +14,7 @@ used python packages:
  - sys          # args listing
  - tqdm         # tar extraction progess bar
 ```
-install_locally.sh - local isntaller
+install_locally.sh - local installer
+```bash
+curl https://raw.githubusercontent.com/NoteFox/sAURi/main/install_locally.sh | bash
+```
