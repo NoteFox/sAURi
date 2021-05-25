@@ -1,5 +1,5 @@
 # sAURi
-simple AUR installer, written in Python
+simple AUR installer for arch based os-s, written in Python
 
 used python packages:
 ```
