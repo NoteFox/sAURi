@@ -18,6 +18,7 @@ used python packages:
 installing locally:
 ```bash
 curl https://raw.githubusercontent.com/NoteFox/sAURi/main/install_locally.sh | bash
+exec $SHELL
 ```
 
 how to use:
