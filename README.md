@@ -20,6 +20,12 @@ installing locally:
 curl https://raw.githubusercontent.com/NoteFox/sAURi/main/install_locally.sh | bash
 exec $SHELL
 ```
+warnings: 
+ - reinstalation/update can be done by just running the installation script again (no need for manual reinstalatoin for)
+ - installer is creating an alias in your shell config file!
+ - the python file can be found in /opt/sauri 
+ - the alias is called "sauri"
+ - these two things need to be removed when removing
 
 how to use:
 ```
