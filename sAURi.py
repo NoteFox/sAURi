@@ -33,7 +33,7 @@ def is_pgk_url(string):
 def selectOutOfList(title, listing, pkg_dict ,none_option):
     print(title)
     for i in range(len(listing)):
-        print(str(i) + ")", listing[i], " | " + pkg_dict[listing[i]].description)
+        print(str(i) + ")", str(listing[i]), " | " + str(pkg_dict[listing[i]].description))
     if none_option:
         print("-1) none")
     selection = input("select -> ")
