@@ -19,3 +19,10 @@ installing locally:
 ```bash
 curl https://raw.githubusercontent.com/NoteFox/sAURi/main/install_locally.sh | bash
 ```
+
+how to use:
+```
+sauri <package name>
+# sauri hello
+```
+
