@@ -20,7 +20,7 @@ sudo chown $USER /opt/sauri/install_pips.sh
 
 # automatic config file detection directly copied from
 # https://github.com/rbenv/rbenv/blob/master/libexec/rbenv-init
-# Software licensed un the "MIT License"
+# Software licensed under the "MIT License"
 
 shell="$1"
 if [ -z "$shell" ]; then
