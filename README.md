@@ -23,6 +23,6 @@ curl https://raw.githubusercontent.com/NoteFox/sAURi/main/install_locally.sh | b
 how to use:
 ```
 sauri <package name>
-# sauri hello
+# example: sauri hello
 ```
 
