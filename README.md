@@ -3,12 +3,12 @@ simple AUR installer for arch based os-s, written in Python
 
 used python packages:
 ```
- - difflib        # to find closest questioned package
+ - difflib      # to find closest questioned package
  - re           # url and name checking
  - requests     # link_up test
  - wget         # wget the pgk
  - os           # os for directory checking
- - tarfile       # extraction of pkg
+ - tarfile      # extraction of pkg
  - subprocess   # execution of package installation
  - aur          # aur api for package searching
  - sys          # args listing
