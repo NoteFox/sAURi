@@ -128,6 +128,8 @@ if __name__ == '__main__':
 
         for arg in sys.argv[1:]:
             if not is_pgk_url(arg):
+                print(" ! installing by reference name is disabled, till the aur python library can be used again ! ");
+                exit(1);
                 installByName(arg)
                 pass
             else:
