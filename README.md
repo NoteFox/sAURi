@@ -20,6 +20,8 @@ installing locally:
 curl https://raw.githubusercontent.com/NoteFox/sAURi/main/install_locally.sh | bash
 exec $SHELL
 ```
+(Since the AUR library, that sAURi uses has some problems at the moment, searching by name is not available, you can only install by url, which can be found on the aur online (right click on 'download snapshot' and copy the link))
+
 warnings: 
  - reinstalation/update can be done by just running the installation script again (no need for manual reinstalatoin for)
  - installer is creating an alias in your shell config file!
@@ -29,7 +31,7 @@ warnings:
 
 how to use:
 ```
-sauri <package name>
-# example: sauri hello
+sauri <package url>
+# example: sauri https://aur.archlinux.org/cgit/aur.git/snapshot/hello.tar.gz
 ```
 
