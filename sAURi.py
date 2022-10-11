@@ -13,8 +13,8 @@ import sys  # args listing
 
 from tqdm import tqdm  # tar extraction progress bar
 
-directDownloadPath = "/home/note/Downloads/Compressed"  # path to first pkg download
-packageInstallPath = "/home/note/Downloads/Programs"  # path to extraction dir
+directDownloadPath = "~/Downloads/Compressed"  # path to first pkg download
+packageInstallPath = "~/Downloads/Programs"  # path to extraction dir
 
 # pattern for url checking
 url_existence_pattern = re.compile("^(https://aur.archlinux.org/cgit/aur.git/snapshot/)")
